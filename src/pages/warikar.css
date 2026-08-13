@@ -1,0 +1,699 @@
+/* =========================================
+   SEVASETU — WARKARI DASHBOARD
+   ========================================= */
+
+.warkari-page {
+  min-height: 100vh;
+  background: #fffaf5;
+  color: #29211a;
+}
+
+
+/* NAVBAR */
+
+.dashboard-nav {
+  height: 76px;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-bottom: 1px solid #eee4da;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard-brand-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #fff0e6;
+  font-size: 21px;
+}
+
+.dashboard-brand strong {
+  display: block;
+  font-size: 19px;
+  letter-spacing: -0.03em;
+}
+
+.dashboard-brand span {
+  display: block;
+  margin-top: 2px;
+
+  color: #9a9087;
+  font-size: 10px;
+}
+
+.dashboard-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notification-button {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #eee4da;
+  border-radius: 50%;
+
+  background: white;
+  color: #665b52;
+}
+
+.notification-button span {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background: #ea580c;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: white;
+  background: #ea580c;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.profile-info strong {
+  display: block;
+  font-size: 12px;
+}
+
+.profile-info span {
+  color: #9a9087;
+  font-size: 10px;
+}
+
+.logout-button {
+  padding: 9px 14px;
+
+  border: 1px solid #e7ddd3;
+  border-radius: 9px;
+
+  background: white;
+  color: #71665d;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.logout-button:hover {
+  color: #ea580c;
+  border-color: #f1b58f;
+}
+
+
+/* MAIN */
+
+.warkari-main {
+  width: min(1350px, 90%);
+  margin: 0 auto;
+
+  padding: 55px 0 70px;
+}
+
+
+/* WELCOME */
+
+.welcome-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.dashboard-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ea580c;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #16a34a;
+
+  box-shadow: 0 0 0 4px rgba(22,163,74,.1);
+}
+
+.welcome-section h1 {
+  margin: 12px 0 8px;
+
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1;
+
+  letter-spacing: -0.06em;
+}
+
+.welcome-section p {
+  margin: 0;
+
+  color: #8d8278;
+  font-size: 14px;
+}
+
+.current-location {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 12px 16px;
+
+  border: 1px solid #e9dfd6;
+  border-radius: 13px;
+
+  background: white;
+}
+
+.location-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #ea580c;
+  background: #fff0e6;
+}
+
+.current-location span {
+  display: block;
+
+  color: #aaa097;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.current-location strong {
+  display: block;
+  margin-top: 3px;
+
+  font-size: 11px;
+}
+
+
+/* SOS */
+
+.sos-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 24px 28px;
+
+  margin-bottom: 55px;
+
+  border: 1px solid #ffd4bd;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    100deg,
+    #fff1e8,
+    #fff9f5
+  );
+}
+
+.sos-symbol {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  color: #dc2626;
+  background: #fee2e2;
+}
+
+.sos-content {
+  flex: 1;
+}
+
+.sos-content > span {
+  color: #dc2626;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.sos-content h2 {
+  margin: 5px 0;
+
+  font-size: 19px;
+}
+
+.sos-content p {
+  margin: 0;
+
+  color: #8d8278;
+  font-size: 11px;
+}
+
+.sos-main-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 14px 21px;
+
+  border: none;
+  border-radius: 11px;
+
+  color: white;
+  background: #dc2626;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  box-shadow: 0 8px 20px rgba(220,38,38,.2);
+
+  transition: .2s;
+}
+
+.sos-main-button:hover {
+  transform: translateY(-2px);
+  background: #b91c1c;
+}
+
+
+/* SECTION HEADINGS */
+
+.services-section,
+.nearby-section {
+  margin-bottom: 55px;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.section-eyebrow {
+  color: #ea580c;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: .14em;
+}
+
+.section-title-row h2 {
+  margin: 7px 0 0;
+
+  font-size: 30px;
+  letter-spacing: -.045em;
+}
+
+.view-all-button,
+.map-expand-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border: none;
+  background: transparent;
+
+  color: #ea580c;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* SERVICES */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.service-tile {
+  min-height: 225px;
+
+  padding: 21px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  border: 1px solid #e9dfd6;
+  border-radius: 17px;
+
+  background: white;
+
+  transition: .25s;
+
+  cursor: pointer;
+}
+
+.service-tile:hover {
+  transform: translateY(-6px);
+
+  border-color: #f1b58f;
+
+  box-shadow:
+    0 16px 35px rgba(70,40,20,.09);
+}
+
+.service-tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-tile-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  color: #ea580c;
+  background: #fff0e6;
+}
+
+.service-arrow {
+  color: #aaa097;
+
+  transition: .2s;
+}
+
+.service-tile:hover .service-arrow {
+  color: #ea580c;
+  transform: translateX(3px);
+}
+
+.service-tile-text {
+  margin-top: auto;
+}
+
+.service-tile-text h3 {
+  margin: 0 0 7px;
+
+  font-size: 17px;
+}
+
+.service-tile-text p {
+  margin: 0;
+
+  color: #8d8278;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.service-count {
+  margin-top: 13px;
+
+  color: #ea580c;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+/* MAP */
+
+.warkari-map {
+  position: relative;
+
+  height: 470px;
+
+  overflow: hidden;
+
+  border: 1px solid #e5dacf;
+  border-radius: 20px;
+
+  background: #e9e2d8;
+
+  box-shadow:
+    0 12px 35px rgba(50,30,15,.07);
+}
+
+.warkari-map > * {
+  width: 100%;
+  height: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+}
+
+.map-search {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 12px 16px;
+
+  border-radius: 11px;
+
+  background: white;
+
+  box-shadow: 0 7px 20px rgba(0,0,0,.12);
+
+  color: #8d8278;
+
+  font-size: 11px;
+}
+
+.map-legend {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+
+  display: flex;
+  gap: 15px;
+
+  padding: 12px 15px;
+
+  border-radius: 11px;
+
+  background: white;
+
+  box-shadow: 0 7px 20px rgba(0,0,0,.12);
+
+  font-size: 9px;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.map-legend i {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-medical {
+  background: #ef4444;
+}
+
+.legend-food {
+  background: #f97316;
+}
+
+.legend-water {
+  background: #3b82f6;
+}
+
+
+/* SAFETY */
+
+.safety-note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 20px 23px;
+
+  border: 1px solid #d9eadf;
+  border-radius: 15px;
+
+  background: #f3faf5;
+}
+
+.safety-icon {
+  font-size: 25px;
+}
+
+.safety-note strong {
+  font-size: 12px;
+}
+
+.safety-note p {
+  margin: 4px 0 0;
+
+  color: #7e8d83;
+  font-size: 10px;
+}
+
+
+/* FOOTER */
+
+.dashboard-footer {
+  padding: 20px 5%;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #eee4da;
+
+  color: #aaa097;
+
+  font-size: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .welcome-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sos-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sos-main-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-nav-right {
+    gap: 8px;
+  }
+
+  .profile-info {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .warkari-main {
+    width: calc(100% - 28px);
+    padding-top: 35px;
+  }
+
+  .dashboard-nav {
+    padding: 0 14px;
+  }
+
+  .logout-button {
+    display: none;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .warkari-map {
+    height: 350px;
+  }
+
+  .dashboard-footer {
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+  }
+
+}

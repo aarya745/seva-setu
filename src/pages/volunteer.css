@@ -1,0 +1,599 @@
+/* =========================================
+   SEVASETU — VOLUNTEER DASHBOARD
+   ========================================= */
+
+.volunteer-page {
+  min-height: 100vh;
+  background: #f8faf9;
+  color: #20231f;
+}
+
+
+/* NAVBAR */
+
+.volunteer-brand {
+  background: #e9f7ef;
+  color: #16834a;
+}
+
+.volunteer-avatar {
+  background: #16834a;
+}
+
+
+/* MAIN */
+
+.volunteer-main {
+  width: min(1350px, 90%);
+  margin: auto;
+  padding: 55px 0 70px;
+}
+
+
+/* HEADER */
+
+.volunteer-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.volunteer-header h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(36px, 4vw, 55px);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.volunteer-header p {
+  margin: 0;
+  color: #7b827d;
+  font-size: 14px;
+}
+
+
+/* AVAILABILITY */
+
+.availability-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 12px 15px;
+
+  background: white;
+  border: 1px solid #dfe8e2;
+  border-radius: 14px;
+}
+
+.availability-indicator {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: #e9f8ef;
+}
+
+.availability-indicator span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 5px rgba(22,163,74,.12);
+}
+
+.availability-card strong {
+  display: block;
+  font-size: 11px;
+}
+
+.availability-card > div:nth-child(2) span {
+  display: block;
+  margin-top: 3px;
+  color: #89918b;
+  font-size: 9px;
+}
+
+.availability-card button {
+  margin-left: 12px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #dfe8e2;
+  border-radius: 8px;
+
+  background: white;
+  color: #68716b;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* STATS */
+
+.volunteer-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 55px;
+}
+
+.volunteer-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 20px;
+
+  background: white;
+  border: 1px solid #e2e9e4;
+  border-radius: 16px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+.stat-icon.orange {
+  color: #ea580c;
+  background: #fff0e6;
+}
+
+.stat-icon.green {
+  color: #16834a;
+  background: #e9f8ef;
+}
+
+.stat-icon.blue {
+  color: #2563eb;
+  background: #eaf2ff;
+}
+
+.stat-icon.purple {
+  color: #7c3aed;
+  background: #f1eafe;
+}
+
+.volunteer-stat-card span {
+  display: block;
+  color: #8b938d;
+  font-size: 9px;
+}
+
+.volunteer-stat-card strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 24px;
+}
+
+
+/* REQUESTS */
+
+.requests-section {
+  margin-bottom: 55px;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.section-eyebrow {
+  color: #16834a;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.section-title-row h2 {
+  margin: 7px 0 0;
+  font-size: 30px;
+  letter-spacing: -.045em;
+}
+
+.request-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #6d776f;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* REQUEST CARD */
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.request-card-new {
+  padding: 17px 20px;
+
+  background: white;
+  border: 1px solid #e2e9e4;
+  border-radius: 16px;
+
+  transition: .2s;
+}
+
+.request-card-new:hover {
+  border-color: #b9d8c5;
+  box-shadow: 0 12px 28px rgba(30,70,45,.07);
+  transform: translateY(-2px);
+}
+
+.request-priority {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 11px;
+
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.priority-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.priority-dot.high {
+  background: #ef4444;
+}
+
+.priority-dot.medium {
+  background: #f59e0b;
+}
+
+.priority-dot.normal {
+  background: #3b82f6;
+}
+
+.request-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.request-icon-new {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  color: #16834a;
+  background: #e9f8ef;
+}
+
+.request-details {
+  flex: 1;
+}
+
+.request-details h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.request-details p {
+  margin: 0;
+
+  color: #7c857e;
+  font-size: 10px;
+}
+
+.request-meta {
+  display: flex;
+  gap: 15px;
+  margin-top: 9px;
+}
+
+.request-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: #929a94;
+  font-size: 9px;
+}
+
+.accept-request {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 11px 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  color: white;
+  background: #16834a;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  transition: .2s;
+}
+
+.accept-request:hover {
+  background: #116b3c;
+  transform: translateX(2px);
+}
+
+
+/* COVERAGE */
+
+.coverage-section {
+  margin-bottom: 35px;
+}
+
+.coverage-card {
+  min-height: 310px;
+
+  display: flex;
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #173b2a;
+  color: white;
+}
+
+.coverage-content {
+  width: 50%;
+  padding: 45px;
+}
+
+.coverage-content .section-eyebrow {
+  color: #83d8a5;
+}
+
+.coverage-content h2 {
+  margin: 10px 0 12px;
+
+  font-size: 32px;
+  letter-spacing: -.04em;
+}
+
+.coverage-content p {
+  max-width: 390px;
+
+  color: #b8cdbf;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.coverage-content button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 25px;
+  padding: 12px 17px;
+
+  border: none;
+  border-radius: 9px;
+
+  color: #173b2a;
+  background: white;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.coverage-visual {
+  position: relative;
+
+  width: 50%;
+  min-height: 310px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(115,211,154,.16),
+      transparent 55%
+    );
+}
+
+.coverage-circle {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(130,215,163,.25);
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 280px;
+  height: 280px;
+}
+
+.circle-two {
+  width: 175px;
+  height: 175px;
+}
+
+.coverage-center {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  color: #173b2a;
+  background: white;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+}
+
+.coverage-pin {
+  position: absolute;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: white;
+  color: #16834a;
+
+  box-shadow: 0 7px 20px rgba(0,0,0,.25);
+}
+
+.pin-one {
+  top: 25%;
+  left: 25%;
+}
+
+.pin-two {
+  right: 22%;
+  top: 25%;
+}
+
+.pin-three {
+  right: 25%;
+  bottom: 20%;
+}
+
+
+/* MESSAGE */
+
+.volunteer-message {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 20px 23px;
+
+  border: 1px solid #d8eadf;
+  border-radius: 15px;
+
+  background: #f0f9f3;
+}
+
+.message-icon {
+  font-size: 25px;
+}
+
+.volunteer-message strong {
+  font-size: 12px;
+}
+
+.volunteer-message p {
+  margin: 4px 0 0;
+
+  color: #7c8b82;
+  font-size: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .volunteer-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .volunteer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .availability-card {
+    width: 100%;
+  }
+
+  .request-main {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .accept-request {
+    margin-left: 65px;
+  }
+
+  .coverage-card {
+    flex-direction: column;
+  }
+
+  .coverage-content,
+  .coverage-visual {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .volunteer-main {
+    width: calc(100% - 28px);
+    padding-top: 35px;
+  }
+
+  .volunteer-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-content {
+    padding: 30px;
+  }
+
+  .coverage-visual {
+    min-height: 270px;
+  }
+
+}
