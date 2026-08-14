@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import SignIn from "./pages/SignIn";
-import RoleSelection from "./pages/RoleSelection";
-import Warkari from "./pages/Warkari";
-import Volunteer from "./pages/Volunteer";
+import SignIn from "./pages/signIn";
+import RoleSelection from "./pages/roleselection";
+import Warkari from "./pages/warkari";
+import Volunteer from "./pages/volunteer";
 
 function App() {
   return (
